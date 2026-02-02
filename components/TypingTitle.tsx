@@ -25,11 +25,10 @@ export default function TypingTitle({ text, className = "", delay = 0 }: TypingT
     };
 
     const letter = {
-        hidden: { opacity: 0, y: 10, filter: "blur(4px)" },
+        hidden: { opacity: 0, y: 10, },
         visible: {
             opacity: 1,
             y: 0,
-            filter: "blur(0px)",
             transition: {
                 duration: 0.1,
             },
